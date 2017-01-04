@@ -16,8 +16,8 @@
                         <h1 class="article-title">
                             {{$page->title}}
                         </h1>
-                        <div class="meta">
-                            <span><li class="fa fa-calendar-o"></li><time datetime="2016-08-05T00:10:14+08:00">{{$page->created_at->format('Y-m-d')}}</time></span>
+                        <div class="article-meta">
+                            <li class="fa fa-calendar-o"></li><span><time datetime="2016-08-05T00:10:14+08:00">{{$page->created_at->format('Y-m-d')}}</time></span>
                         </div>
                     </header>
                     <article class="article-content">

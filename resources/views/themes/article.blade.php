@@ -14,9 +14,9 @@
                             {{$article->title}}
                         </h1>
                         <div class="article-meta">
-                            <span><li class="fa fa-calendar-o"></li><time datetime="2016-08-05T00:10:14+08:00">{{$article->created_at->format('Y-m-d')}}</time></span>
-                            <span><li class="fa fa-folder-o"></li><a href="{{route('category.show',$article->category->slug)}}"> {{$article->category->name}}</a></span>
-                            <span><li class="fa fa-eye"></li>{{$article->view}}</span>
+                            <li class="fa fa-calendar-o"></li><span><time datetime="2016-08-05T00:10:14+08:00">{{$article->created_at->format('Y-m-d')}}</time></span>
+                            <li class="fa fa-folder-o"></li><span><a href="{{route('category.show',$article->category->slug)}}"> {{$article->category->name}}</a></span>
+                            <li class="fa fa-eye"></li><span>{{$article->view}}</span>
                         </div>
                     </header>
                     <article class="article-content">
