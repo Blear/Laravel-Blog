@@ -57,6 +57,7 @@ elixir(mix => {
     .scripts([
         'backend.js',
         'script.js',
+        'plugins/InlineAttachment/codemirror-4.inline-attachment.min.js',
         'plugins/sweetalert/sweetalert.min.js',
     ], 'public/js/backend.js')
 

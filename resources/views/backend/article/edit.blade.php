@@ -101,7 +101,6 @@
 @section('js')
     <script src="https://cdn.bootcss.com/select2/4.0.3/js/select2.min.js"></script>
     <script src="https://cdn.bootcss.com/simplemde/1.11.2/simplemde.min.js"></script>
-    <script src="{{asset('plugins/backend/InlineAttachment/codemirror-4.inline-attachment.min.js')}}"></script>
     <script>
         $(document).ready(function () {
             var simplemde = new SimpleMDE({
