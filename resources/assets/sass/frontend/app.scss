@@ -1,0 +1,12 @@
+@import "variable-overrides";
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//Font-awsome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+@import "variables";
+@import "core";
+@import "breadcrumb";
+@import "article";
+@import "comment";
+@import "widget";

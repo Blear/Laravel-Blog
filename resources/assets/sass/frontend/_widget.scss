@@ -1,0 +1,86 @@
+.widget{
+  border: 1px solid #eaeaea;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.widget .widget-head{
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #fbfbfb;
+  padding: 10px 15px;
+}
+.widget-head li{
+  color:#36F;
+  margin-right:5px;
+}
+.widget .widget-body{
+  background-color: #fff;
+}
+.widget .infomation{
+  padding:5px;
+  overflow:hidden;
+}
+.widget .infomation .avatar{
+  float:left;
+  width:80px;
+  height:80px;
+  margin-right:10px;
+}
+.widget .infomation p{
+  color: #8c8c8c;
+}
+.widget .info-link{
+  margin-top:10px;
+  border-top:1px solid #ccc;
+}
+
+.widget .info-link ul{
+  padding:0;
+  text-align: center;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.widget .info-link li{
+  display:inline-block;
+  margin: 0px 10px;
+  overflow: hidden;
+}
+.widget .info-link li a{
+  text-decoration:none;
+  font-size:24px;
+}
+.widget .list-group{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.widget .list-item{
+  border-top-width: 0;
+  border-width: 1px 0;
+  padding: 8px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.widget .list-item .title{
+  display: inline-block;
+  width: 75%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.widget .list-item .badge{
+  background-color: #d9534f;
+  float:right;
+}
+.widget .widget-content{
+  padding: 12px 10px 15px 10px;
+}
+.widget .widget-content a{
+  display: inline-block;
+  line-height: 21px;
+  margin: 0 5px 5px 7px;
+  opacity: .7;
+  padding: 2px 6px;
+}

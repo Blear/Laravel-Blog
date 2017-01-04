@@ -1,0 +1,11 @@
+body{
+  background-image:url($body-bg-image-path);
+  padding-top:80px;
+}
+a:hover{
+  text-decoration:none;
+}
+#footer{
+  padding: 20px;
+  text-align: center;
+  background:#ccc;}
