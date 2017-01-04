@@ -28,7 +28,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
-                        <div class="checkbox icheck">
+                        <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="remember"> 记住我
                             </label>
