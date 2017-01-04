@@ -23,7 +23,7 @@
                     <article class="article-content">
                         <hr style="margin:0px 0px 15px 0px">
                         <p>{!! $page->content !!}</p>
-                        <div class="share-bar"></div>
+                        <div class="social-share"></div>
                     </article>
                 </article>
                 @include('themes.widget.comment',['comment_key'=>$page->as_name,'comment_title'=>$page->title])
@@ -38,12 +38,4 @@
 
         </div>
     </div>
-@endsection
-@section('script')
-    <script src="{{asset('themes/share/dist/js/share.min.js')}}"></script>
-    <script>
-        $(function(){
-            $('.share-bar').share();
-        });
-    </script>
 @endsection

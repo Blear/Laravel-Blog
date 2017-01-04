@@ -34,7 +34,7 @@
                             <p>本文地址:<a href="{{url()->current()}}">{{url()->current()}}</a></p>
                             <p>转载时请以链接形式注明出处</p>
                         </div>
-                        <div class="share-bar"></div>
+                        <div class="social-share"></div>
                     </article>
                 </article>
 
@@ -46,11 +46,4 @@
             </aside>
         </div>
     </div>
-@endsection
-@section('script')
-    <script>
-        $(function(){
-            $('.share-bar').share();
-        });
-    </script>
 @endsection

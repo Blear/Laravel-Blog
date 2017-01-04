@@ -35,12 +35,12 @@ elixir(mix => {
     ], 'public/css/frontend.css')
 
     .webpack([
-        'frontend/app.js',
-        'plugins/share/share.js'
+        'frontend/app.js'
     ],'resources/assets/js/frontend.js')
 
     .scripts([
         'frontend.js',
+        'plugins/share/jquery.share.js'
     ], 'public/js/frontend.js')
 
     .sass([
