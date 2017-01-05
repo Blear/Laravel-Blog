@@ -9,10 +9,7 @@ namespace App\Models\User\Traits;
 trait UserAccess
 {
 
-    /**
-     * 循环添加角色
-     * @param $roles
-     */
+
     public function attachRoles($roles)
     {
         foreach ($roles as $role) {
@@ -20,10 +17,7 @@ trait UserAccess
         }
     }
 
-    /**
-     * 循环删除角色
-     * @param $roles
-     */
+
     public function detachRoles($roles)
     {
         foreach ($roles as $role) {
@@ -31,10 +25,7 @@ trait UserAccess
         }
     }
 
-    /**
-     * 添加角色
-     * @param $role
-     */
+
     public function attachRole($role)
     {
         if (is_object($role)) {
@@ -48,10 +39,7 @@ trait UserAccess
         $this->roles()->attach($role);
     }
 
-    /**
-     * 删除角色
-     * @param $role
-     */
+
     public function detachRole($role)
     {
         if (is_object($role)) {
@@ -66,11 +54,7 @@ trait UserAccess
     }
 
 
-    /**
-     * 判断用户是否具有指定角色
-     * @param $nameOrId
-     * @return bool
-     */
+
     public function hasRole($nameOrId)
     {
         foreach($this->roles as $role){
@@ -91,12 +75,7 @@ trait UserAccess
         return false;
     }
 
-    /**
-     * 判断用户是否具有多个角色，可以指定匹配全部或满足其中一个
-     * @param $roles
-     * @param bool $needsAll
-     * @return bool
-     */
+
     public function hasRoles($roles,$needsAll=false)
     {
         if(!is_array($roles)){
@@ -123,11 +102,7 @@ trait UserAccess
     }
 
 
-    /**
-     * 判断当前用户是否指定权限
-     * @param $nameOrId
-     * @return bool
-     */
+
     public function hasPermission($nameOrId)
     {
         foreach($this->roles as  $role){
@@ -150,12 +125,7 @@ trait UserAccess
         return false;
     }
 
-    /**
-     * 判断用户是否有多个权限，可以指定匹配全部或满足其中一个
-     * @param $permissions
-     * @param bool $needsAll
-     * @return bool
-     */
+
     public function hasPermissions($permissions, $needsAll = false)
     {
         if (! is_array($permissions)) {

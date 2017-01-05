@@ -8,29 +8,17 @@ namespace App\Models\Role\Traits\Attribute;
  */
 trait RoleAttribute
 {
-    /**
-     * 返回管理增删改URL修改器
-     * @return string
-     */
     public function getActionButtonsAttribute()
     {
         return $this->getEditButtonAttribute() .
         $this->getDeleteButtonAttribute();
     }
 
-    /**
-     * 修改url
-     * @return string
-     */
     public function getEditButtonAttribute()
     {
         return '<a href="'.route('admin.role.edit',$this).'" class="btn btn-xs btn-primary"><i class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="修改"></i></a> ';
     }
 
-    /**
-     * 删除url
-     * @return string
-     */
     public function getDeleteButtonAttribute()
     {
         return '<a href="javascript:void(0);" onclick="_delete($(this))" name="delete" class="btn btn-xs btn-danger"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="删除"></i>

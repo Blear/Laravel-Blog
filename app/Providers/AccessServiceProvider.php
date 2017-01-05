@@ -31,22 +31,19 @@ class AccessServiceProvider extends ServiceProvider
         $this->registerFacades();
     }
 
-    /**
-     * 把Access注册到服务容器
-     */
     private function registerAccess(){
         $this->app->bind('access',function($app){
             return new Access($app);
         });
     }
-    //注册Access门面
+
     private function registerFacades(){
         $this->app->booting(function(){
             $loader=\Illuminate\Foundation\AliasLoader::getInstance();
             $loader->alias('Access',\App\Services\Access\Facades\Access::class);
         });
     }
-    //注册Blade扩展命令
+
     private function registerBladeExtensions()
     {
         /**

@@ -22,7 +22,7 @@ class RouteNeedsPermission
             $access=access()->hasPermission($permission,$needsAll=='true'?true:false);
         }
         if(!$access){
-            //自定义权限不足页面
+            //权限不足
         }
         return $next($request);
     }

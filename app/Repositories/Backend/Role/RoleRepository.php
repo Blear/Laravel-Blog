@@ -19,12 +19,7 @@ class RoleRepository extends Repository
 {
     const MODEL=Role::class;
 
-    /**
-     * 角色列表ajax接口
-     * @param string $order_by
-     * @param string $sort
-     * @return mixed
-     */
+
     public function getForDataTable($order_by='sort',$sort='asc'){
         return $this->query()
             ->with('users','permissions')
@@ -37,12 +32,7 @@ class RoleRepository extends Repository
             ]);
     }
 
-    /**
-     * 获取所有角色
-     * @param string $order_by
-     * @param string $sort
-     * @return mixed
-     */
+
     public function getAll($order_by='sort',$sort='asc')
     {
         return $this->query()
@@ -50,11 +40,7 @@ class RoleRepository extends Repository
             ->get();
     }
 
-    /**
-     * 创建新角色
-     * @param array $input
-     * @throws GeneralException
-     */
+
     public function create(array $input)
     {
         if($this->query()->where('name',$input['name'])->first()){
@@ -95,12 +81,7 @@ class RoleRepository extends Repository
 
     }
 
-    /**
-     * 修改角色
-     * @param Model $role
-     * @param array $input
-     * @throws GeneralException
-     */
+
     public function update(Model $role,array $input)
     {
         if($role->id==1){

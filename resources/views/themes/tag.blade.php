@@ -26,7 +26,7 @@
                             <a rel="tag" href="{{route('tag.show',$tag->name)}}">{{ $tag->name }}</a>
                             @endforeach
                         </span>
-                        <a class="more-link" href="{{route('article.show',$article->as_name)}}">查看更多 »</a>
+                        <a class="more-link" href="{{route('article.show',$article->as_name)}}">阅读全文 »</a>
                     </div>
                 </article>
                 @endforeach

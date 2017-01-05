@@ -22,7 +22,7 @@
                             <a rel="tag" href="{{route('tag.show',$tag->name)}}">{{ $tag->name }}</a>
                             @endforeach
                         </span>
-                        <a class="more-link" href="{{route('article.show',$article->slug)}}">阅读全文 »</a></p>
+                        <a class="more-link" href="{{route('article.show',$article->slug)}}">阅读全文 »</a>
                     </div>
                 </article>
                 @endforeach
