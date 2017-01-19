@@ -7,10 +7,6 @@
 安装前请先安装composer。
 ###安装步骤：
 1.下载程序源码并解压到你的web目录
-  你也可以用git clone命令下载
-  ```
-  git clone git@github.com:jcc/blog.git
-  ```
 2.安装程序依赖
   在博客目录下执行
   ```
