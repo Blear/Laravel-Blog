@@ -27,7 +27,7 @@
  DB_USERNAME=homestead //用户名
  DB_PASSWORD=secret  //密码
  ```
- 博客默认采用文件缓存，如需要用REDIS缓存，请修改CACHE_DRIVER=redis,平切配置REDIS的主机端口等信息。
+ 博客默认采用文件缓存，如需要用REDIS缓存，请修改CACHE_DRIVER=redis,并配置REDIS的主机端口等信息。
  
  4.生成加密用的key
  在当前目录执行
