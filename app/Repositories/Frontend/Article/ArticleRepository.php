@@ -23,9 +23,9 @@ class ArticleRepository extends Repository
         return cache()->remember($this->tag.'all'.'page'.request()->get('page', 1),60,function() use($page){
             return $this->query()
                 ->orderBy('published_at','desc')
-                ->with('category','tags')
                 ->Published(true)
-                ->paginate($page);
+                ->with('category','tags')
+                ->paginate(1);
         });
     }
 
