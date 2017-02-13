@@ -18,8 +18,8 @@ class CategoryController extends Controller
     }
 
     public function show($slug){
-        $category=$this->categories->getCategoryBySlug($slug,config('page_size'));
-        $articles=$this->articles->getArticlesByCategoryId($category->id);
+        $category=$this->categories->getCategoryBySlug($slug);
+        $articles=$this->articles->getArticlesByCategoryId($category->id,env('PAGE_SIZE',6));
         return view('themes.category')->with(compact('articles','category'));
     }
 }

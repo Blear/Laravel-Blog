@@ -20,7 +20,7 @@ class TagController extends Controller
 
     public function show($name){
         $tag=$this->tags->getTagByName($name);
-        $articles=$this->tags->getArticlesByTag($tag,config('page_size'));
+        $articles=$this->tags->getArticlesByTag($tag,env('PAGE_SIZE',6));
         return view('themes.tag')->with(compact('articles','tag'));
     }
 

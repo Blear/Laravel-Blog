@@ -15,7 +15,7 @@ class ArticleController extends Controller
 
     public function index()
     {
-        return view('themes.index')->withArticles($this->articles->getArticles(config('page_size')));
+        return view('themes.index')->withArticles($this->articles->getArticles(env('PAGE_SIZE',6)));
     }
 
     public function show($slug){

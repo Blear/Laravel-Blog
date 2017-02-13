@@ -18,7 +18,7 @@ class SearchController extends Controller
     public function search(Request $request){
 
         $keyword=$request->get("keyword");
-        $articles=$this->articles->getArticlesSearch($keyword,config('page_size'));
+        $articles=$this->articles->getArticlesSearch($keyword,env('PAGE_SIZE',6));
         $articles->appends(['keyword'=>$keyword])->render();
         return view('themes.search')->with(compact('articles','keyword'));
     }

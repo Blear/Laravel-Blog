@@ -38,7 +38,7 @@ class TagRepository extends Repository
 
     public function getArticlesByTag($tag,$page=6)
     {
-        return cache()->remember('article'.'tag'.$tag->id,60,function() use($tag,$page){
+        return cache()->remember('article'.'tag'.$tag->id.request()->get('page', 1),60,function() use($tag,$page){
             return $tag
                 ->articles()
                 ->Published(true)

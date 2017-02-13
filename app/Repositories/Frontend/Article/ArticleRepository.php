@@ -25,7 +25,7 @@ class ArticleRepository extends Repository
                 ->orderBy('published_at','desc')
                 ->Published(true)
                 ->with('category','tags')
-                ->paginate(1);
+                ->paginate($page);
         });
     }
 
