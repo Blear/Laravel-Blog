@@ -34,7 +34,12 @@
  ```
  php artisan key:generate
  ```
- 5.填充博客初始数据
+ 5.执行建表命令
+  在当前目录执行
+ ```
+ php artisan migrate
+ ```
+ 6.填充博客初始数据
  在当前目录执行
  ```
  php artisan db:seed
