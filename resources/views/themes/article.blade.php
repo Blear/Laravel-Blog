@@ -1,5 +1,9 @@
 @extends('themes.layouts.layout')
 @section('title',$article->title)
+@section('css')
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+@endsection
 @section('content')
     <div class="container">
         <div class="row">
@@ -46,4 +50,14 @@
             </aside>
         </div>
     </div>
+@endsection
+@section('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<!-- 初始化 -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    hljs.highlightAll();
+  });
+</script>
 @endsection
